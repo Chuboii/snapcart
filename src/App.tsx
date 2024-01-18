@@ -1,12 +1,10 @@
-import Footer from "./components/footer/Footer"
-import Navbar from "./components/navbar/Navbar"
+import RenderRoutes from "./routes/RenderRoutes"
 
 function App() {
 
   return (
     <>
-      <Navbar />
-      <Footer/>
+  <RenderRoutes/>
     </>
   )
 }

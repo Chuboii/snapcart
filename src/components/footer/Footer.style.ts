@@ -4,7 +4,7 @@ export const FooterContainer = styled.footer`
 color:#eee;
 background-color: #535357;
 font-size: 13px;
-position: absolute;
+position: relative;
 bottom:0;
 left: 0;
 right: 0;
