@@ -9,6 +9,9 @@ export const Container = styled.div`
   margin-bottom: 1rem;
    border-radius: 10px;
    margin-right: 1rem;
+   @media screen and (max-width:768px){
+    display:none;
+   }
 `
 export const Item = styled.div`
   padding: .3rem;
