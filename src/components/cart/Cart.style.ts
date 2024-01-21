@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
  position:fixed;
- right:0;
+ right:-10000px;
  width:35%;
  background: rgba( 255, 255, 255, 0.25 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -13,7 +13,22 @@ height: 100dvh;
 z-index:22;
 overflow-y: scroll;
 box-sizing: border-box;
+scrollbar-color: #6969dd #e0e0e0;
+scrollbar-width: thin;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+&::-webkit-scrollbar {
+  width: 10px;
+}
+&::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+&::-webkit-scrollbar-thumb {
+  background:orange;
+  border-radius: 130px;
+}
 `
 export const Box = styled.div`
 display: flex;
