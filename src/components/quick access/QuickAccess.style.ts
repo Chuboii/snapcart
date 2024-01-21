@@ -1,24 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-   display: flex;
-   flex-wrap:wrap;
-   margin: auto;
-   justify-content: center;
-   margin-bottom: 10rem;
-   background-color: #eee;
- width: 90%;
-padding: 1rem 0;
- border-radius: 10px;
-
- 
-@media screen and (max-width:768px){
-  display: grid; 
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-;
-}
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  position: relative;
+  bottom: 1rem;
 `
+export const H1 = styled.p`
+ color:orange;
+ font-family: 'Climate Crisis', sans-serif;
+`
+export const Box = styled.div`
+ display: flex;
+ overflow-x: scroll;
+`
+
 export const Wrap = styled.div`
  margin: 1.5rem .5rem;
  width: 200px;
@@ -28,10 +25,8 @@ export const Wrap = styled.div`
  transition: all .5s;
  padding: 0;
 @media screen and (max-width:768px){
-  width: 80px;
+  width:100%;
   height: 100px;
-  margin-bottom: 2rem;
-
 }
  &:hover{
     transform: scale(1.05);

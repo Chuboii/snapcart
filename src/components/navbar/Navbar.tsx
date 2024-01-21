@@ -7,13 +7,14 @@ import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import HorizontalSplitOutlinedIcon from '@mui/icons-material/HorizontalSplitOutlined';
-
+import Cart from "../cart/Cart";
 
 const Navbar: FC = () => {
 
 
     return (
         <>
+            <Cart/>
             <Container>
                 <Wrap>
                   <Icon1> <HorizontalSplitOutlinedIcon/> </Icon1>

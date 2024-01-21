@@ -5,6 +5,8 @@ export const Container = styled.nav`
   display: flex;
   justify-content: space-between;
   padding: 1rem 4rem;
+  z-index:12;
+  background:white;
   align-items: center;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
  
@@ -21,7 +23,10 @@ export const Box = styled.div`
   margin: 0 .8rem;
   display:flex;
   cursor:pointer;
-
+  transition: all .3s;
+&:hover{
+  color: #E08041;
+}
   @media screen and (max-width:768px){
     margin: 0 .4rem;
   }
@@ -29,12 +34,17 @@ export const Box = styled.div`
 export const Wrap = styled.div`
  display: flex;
  align-items: center;
+ 
 `
 export const Input = styled.input`
 width: 70%;
 padding: .8rem .4rem;
 border-radius: 5px;
 border: 1px solid;
+@media screen and (min-width: 768px) and (max-width: 1150px){
+     margin-right:1rem;
+     width: 50%;
+  }
 `
 export const Text = styled.div`
 margin:0 .5rem;
@@ -53,9 +63,12 @@ export const Logo = styled.div`
   font-family: 'Bungee Spice', sans-serif;
   font-size:25px;
 
-  @media screen and (max-width:768px){
+    @media screen and (max-width:768px){
   margin-left: .5rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1150px){
+     margin-right:1rem;
+  }
 `
 export const Icon1 = styled.div`
 display: none;
@@ -63,6 +76,8 @@ display: none;
 @media screen and (max-width:768px){
   display: block;
 }
+
+
 
 `
 export const Icon2 = styled.div`
@@ -110,6 +125,7 @@ export const Form = styled.form`
   width: 50%;
   @media screen and (max-width:768px){
   display: none;
+
 }
 `
 
