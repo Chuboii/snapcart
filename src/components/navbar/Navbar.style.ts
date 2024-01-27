@@ -1,26 +1,29 @@
 import styled from "styled-components";
 
+interface PositionProp {
+  position: string;
+}
 
-export const Container = styled.nav`
+export const Container = styled.nav<PositionProp>`
   display: flex;
   justify-content: space-between;
   padding: 1rem 4rem;
   z-index:12;
   background:white;
   align-items: center;
+  position: ${({ position }) => position};
+  left:0;
+  right:0;
+  top:0;
+  transition:all 19s;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
  
 
   @media screen and (max-width:768px){
-    position:fixed;
-    top:0;
-    left: 0;
-    right: 0;
     padding: 1rem;
   }
 `
 export const Box = styled.div`
-  margin: 0 .8rem;
   display:flex;
   cursor:pointer;
   transition: all .3s;
@@ -28,14 +31,30 @@ export const Box = styled.div`
   color: #E08041;
 }
   @media screen and (max-width:768px){
-    margin: 0 .4rem;
+  margin: 0 .5rem;
   }
+`
+export const WrapLogo = styled.div`
+ display: flex;
+ margin-right: 2rem;
 `
 export const Wrap = styled.div`
  display: flex;
  align-items: center;
- 
+ justify-content: space-between;
+ width: 30%;
+
+ @media screen and (max-width:768px){
+ display: flex;
+ justify-content: center;
+}
 `
+export const Wrapper = styled.div`
+display: flex;
+align-items:center;
+width: 70%;
+`
+
 export const Input = styled.input`
 width: 70%;
 padding: .8rem .4rem;
@@ -122,7 +141,7 @@ export const Icon6 = styled.div`
 
 `
 export const Form = styled.form`
-  width: 50%;
+  width: 100%;
   @media screen and (max-width:768px){
   display: none;
 

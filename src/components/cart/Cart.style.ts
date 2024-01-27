@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface PositionProp {
+  position: string;
+}
+export const Container = styled.div<PositionProp>`
  position:fixed;
- right:-10000px;
+ right:${({position}) => position};
  width:35%;
  background: rgba( 255, 255, 255, 0.25 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -10,6 +13,7 @@ backdrop-filter: blur( 25px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 10px;
 height: 100dvh;
+transition: all .5s;
 z-index:22;
 overflow-y: scroll;
 box-sizing: border-box;
@@ -82,28 +86,27 @@ export const Remove = styled.div`
     }
 `
 export const Contain = styled.div`
-
-
+  
 `
 export const Checkout = styled.button`
-position:sticky;
-bottom:0;
-left:0;
-right:0;
+font-size: 17px;
 color:white;
-width:100%;
 padding:.9rem;
 background-color: #E08041 ;
-border-radius: 0;
-
+border-radius: 7px;
+padding: .5rem 1rem;
 `
 export const Wrapper = styled.div`
-  margin:2rem 0;
+  margin:0;
   padding: 1rem;
 `
 export const Discount = styled.div`
   color:black;
   font-weight: 800;
+`
+export const Span = styled.div`
+   display:flex;
+   align-items: center;
 `
 export const H1 = styled.h2`
   display:flex;
@@ -116,7 +119,8 @@ backdrop-filter: blur( 5px );
 -webkit-backdrop-filter: blur( 4px );
   right: 0;
   align-items:center;
-  padding: 1rem;
+  justify-content: space-between;
+  padding:.5rem 1rem;
 `
 export const MinusIcon = styled.div`
   background-color: #E08041;
