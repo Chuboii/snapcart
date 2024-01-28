@@ -14,6 +14,6 @@ export const Container = styled.div`
 padding: 0 .5rem;
 overflow-x: scroll;
 @media screen and (max-width:768px){
- margin-top: 8rem;
+ margin-top: 4rem;
 }
 `

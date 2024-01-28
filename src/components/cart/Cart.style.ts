@@ -33,6 +33,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   background:orange;
   border-radius: 130px;
 }
+
+@media screen and (max-width:768px){
+  width:100%;
+}
 `
 export const Box = styled.div`
 display: flex;

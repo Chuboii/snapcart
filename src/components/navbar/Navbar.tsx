@@ -10,7 +10,7 @@ import HorizontalSplitOutlinedIcon from '@mui/icons-material/HorizontalSplitOutl
 import Cart from "../cart/Cart";
 import { Outlet } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { toggleCart } from "../../utils/reducers/toggle reducer/ToggleReducer";
+import { toggleCart } from "/src/utils/reducers/toggle reducer/toggleReducer";
 
 const Navbar: FC = () => {
 const [isScreenScrolled, setIsScreenScrolled] = useState(false)

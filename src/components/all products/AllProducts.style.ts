@@ -20,8 +20,13 @@ margin: 1.5rem .5rem;
 transition: all .5s;
 &:hover{
     transform: scale(1.05);
-
  }
+ 
+ @media screen and (max-width:768px){
+  width:27%;
+  margin:.5rem;
+  height:100%;
+}
 `
 
 export const Wrap = styled.div`
@@ -32,8 +37,8 @@ justify-content: center;
  border-radius: 10px;
  padding: 0;
 @media screen and (max-width:768px){
-  width:100%;
-  height: 100px;
+  justify-content:center;
+  box-shadow:0 0 50px 0 rgba(0,0,0,.15);
 }
 `
 
@@ -50,5 +55,4 @@ export const Image = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 10px;
-
 `

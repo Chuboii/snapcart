@@ -2,6 +2,13 @@ import { FC } from "react";
 import {Container,Image,Text, H1} from './FashionStore.style'
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, {
+  Autoplay,Pagination,Navigation
+} from 'swiper/core';
+
+
+
+
 
 const quickAccessItems = [
     {
@@ -47,12 +54,14 @@ const quickAccessItems = [
 
 ]
 const FashionStore:FC = () => {
+  
   return (
       <>
           <Container>
                 <H1>Fashion Store</H1>
                
                 <Swiper
+            
         spaceBetween={10}
         loop={false}
               slidesPerView={window.innerWidth <= 768 ? 4 : 7}
@@ -62,6 +71,7 @@ const FashionStore:FC = () => {
           delay: 2000, // set the delay in milliseconds
           disableOnInteraction: false, // keep autoplay running when user interacts with the swiper
         }}
+        
           >
                 {quickAccessItems.map(item => (
                     <SwiperSlide>

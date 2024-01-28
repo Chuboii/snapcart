@@ -7,7 +7,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../utils/store/store";
-import { toggleCart } from "../../utils/reducers/toggle reducer/ToggleReducer";
+import { toggleCart } from "../../utils/reducers/toggle reducer/toggleReducer";
 
 
 const Cart: FC = () => {
